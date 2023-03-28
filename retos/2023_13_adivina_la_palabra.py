@@ -19,7 +19,7 @@ import math
 def adivina_la_palabra():
     palabras = ['productivo', 'consumidor', 'futbolista', 'contador', 'defensor', 'libro']
     palabra = palabras[math.floor(random() * len(palabras))]
-    letras_mostradas = math.floor(len(palabra) / 2)
+    letras_mostradas = math.ceil(len(palabra) / 2)
     intentos = 4
     posiciones = []
 
